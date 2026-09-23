@@ -50,3 +50,5 @@ El simulador ahora se comunica por un socket local (127.0.0.1) y no necesita nad
 | 15 | 23/09 | `py -3 -m pip install --user mujoco` | Successfully installed mujoco-3.14.0 (con numpy, glfw, pyopengl, etc.) | Warnings: scripts instalados en una carpeta que no está en el PATH. Aviso de pip nuevo | No hace falta: no usamos esos .exe directamente, usamos py -3 -m. No actualizamos pip para no cambiar el entorno | RESUELTO |
 | 16 | 23/09 | `py -3 -c "import mujoco; print(mujoco.__version__)"` | 3.14.0 | - | - | RESUELTO |
 | 17 | 23/09 | `py -3 -m sim --solo-revisar` (desde entorno/) | [OK] Python 3.14.4, [OK] MuJoCo v3.14.0, [OK] Modelos Unitree. Todo listo | - | - | RESUELTO |
+| 18 | 23/09 | `.\INICIAR_SIMULADOR.bat` → opción 2 (Go2) | Se abrió la ventana de MuJoCo con el Go2 visible | - | - | RESUELTO |
+| 19 | 23/09 | `py -3 mi_desarrollo\mi_tp02.py` (plantilla sin modificar, en otra terminal) | [OK] Conectado a Unitree Go2 y [OK] Desconectado. El robot no se mueve | - | Esperado: las 4 funciones están vacías | RESUELTO |
