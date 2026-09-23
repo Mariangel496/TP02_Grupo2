@@ -39,3 +39,14 @@ El simulador ahora se comunica por un socket local (127.0.0.1) y no necesita nad
 | 4 | 23/09 | `for /d %d in (evidencias\*) do ...` | No creó los .gitkeep | El comando es de cmd y la terminal era PowerShell | Usé el equivalente en PowerShell (Get-ChildItem ... New-Item) | RESUELTO |
 | 5 | 23/09 | `git push` + otro comando en la misma línea | `error: unknown switch 'D'` | Pegué dos comandos juntos sin apretar Enter | Ejecuté un comando por vez | RESUELTO |
 | 6 | 23/09 | Comando .gitkeep desde terminal de VS Code | No encontraba la carpeta | La terminal estaba dentro de `evidencias` | `cd ..` para subir a la raíz del repo | RESUELTO |
+| 7 | 23/09 | `Get-CimInstance Win32_OperatingSystem` | Windows 11 Pro 10.0.26200 64 bits | - | - | RESUELTO |
+| 8 | 23/09 | `py -3 --version` / `python --version` | Python 3.14.4 en ambos | - | - | RESUELTO |
+| 9 | 23/09 | `py -3 -m pip --version` | pip 26.0.1 | - | - | RESUELTO |
+| 10 | 23/09 | `git --version` | git 2.55.0 | - | - | RESUELTO |
+| 11 | 23/09 | `py -3 -c "import mujoco..."` | ModuleNotFoundError | MuJoCo no instalado (esperado) | Se instala en Etapa 3 | PENDIENTE |
+| 12 | 23/09 | `git clone https://github.com/tsamaan/UadeRobotLab.git` | Repo clonado (838 archivos, 135 MB) en el Escritorio | - | - | RESUELTO |
+| 13 | 23/09 | `dir UadeRobotLab\05LaboratoriosTPs\TP02_Programacion_I` | Carpeta con INSTALACION.md, LEEME_ESTUDIANTE.md, lanzadores y mi_desarrollo | - | - | RESUELTO |
+| 14 | 23/09 | `Test-Path` de las 3 DLL de Visual C++ | True, True, True | - | Ya estaba instalado, no hace falta descargarlo | RESUELTO |
+| 15 | 23/09 | `py -3 -m pip install --user mujoco` | Successfully installed mujoco-3.14.0 (con numpy, glfw, pyopengl, etc.) | Warnings: scripts instalados en una carpeta que no está en el PATH. Aviso de pip nuevo | No hace falta: no usamos esos .exe directamente, usamos py -3 -m. No actualizamos pip para no cambiar el entorno | RESUELTO |
+| 16 | 23/09 | `py -3 -c "import mujoco; print(mujoco.__version__)"` | 3.14.0 | - | - | RESUELTO |
+| 17 | 23/09 | `py -3 -m sim --solo-revisar` (desde entorno/) | [OK] Python 3.14.4, [OK] MuJoCo v3.14.0, [OK] Modelos Unitree. Todo listo | - | - | RESUELTO |
