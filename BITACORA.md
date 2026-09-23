@@ -52,3 +52,8 @@ El simulador ahora se comunica por un socket local (127.0.0.1) y no necesita nad
 | 17 | 23/09 | `py -3 -m sim --solo-revisar` (desde entorno/) | [OK] Python 3.14.4, [OK] MuJoCo v3.14.0, [OK] Modelos Unitree. Todo listo | - | - | RESUELTO |
 | 18 | 23/09 | `.\INICIAR_SIMULADOR.bat` → opción 2 (Go2) | Se abrió la ventana de MuJoCo con el Go2 visible | - | - | RESUELTO |
 | 19 | 23/09 | `py -3 mi_desarrollo\mi_tp02.py` (plantilla sin modificar, en otra terminal) | [OK] Conectado a Unitree Go2 y [OK] Desconectado. El robot no se mueve | - | Esperado: las 4 funciones están vacías | RESUELTO |
+| 20 | 23/09 | Ejecutar mi_tp02.py desde la carpeta del repo | `ModuleNotFoundError: No module named 'sim'` en robot.py línea 15 | robot.py necesita la carpeta entorno/sim, que solo está en UadeRobotLab | Ejecutar siempre desde UadeRobotLab\...\TP02_Programacion_I. El repo es solo para la entrega | RESUELTO |
+| 21 | 23/09 | Ejecutar controlador con MISION_BASICA | 4 ejecutados, 0 rechazados, 0.8 m recorridos. El Go2 avanzó, giró a la derecha y volvió a avanzar | - | - | RESUELTO |
+| 22 | 23/09 | Ejecutar controlador con MISION_CON_ERRORES | 4 ejecutados, 7 rechazados con su motivo. La misión no se cortó | - | - | RESUELTO |
+| 23 | 23/09 | Ejecutar controlador con MISION_CUADRADO | 9 ejecutados, 1.6 m. El robot volvió al punto de partida | - | Reiniciamos el simulador antes para que arranque desde el origen | RESUELTO |
+| 24 | 23/09 | Ejecutar controlador con MISION_PROPIA | 6 ejecutados, 2 rechazados (tiempo de 12 s y comando "correr") | - | - | RESUELTO |

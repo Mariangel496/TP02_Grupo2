@@ -66,4 +66,7 @@ main()
 La validación tiene dos capas: nuestra función atrapa los comandos mal armados y el robot atrapa los valores que se pasan de los límites.
 
 historial es una lista y se pasa por referencia: ejecutar_mision le agrega cosas adentro y no hace falta devolverla. En cambio velocidad y tiempo son números y se pasan por valor.
+
 ## Nivel máximo alcanzado
+
+Nivel 10: reporte final generado. Se ejecutaron MISION_BASICA, MISION_CON_ERRORES (los 7 comandos inválidos rechazados sin abortar), MISION_CUADRADO y una misión propia. Las capturas están en evidencias/06_misiones.
